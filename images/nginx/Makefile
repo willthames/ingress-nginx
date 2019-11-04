@@ -13,12 +13,12 @@
 # limitations under the License.
 
 # 0.0.0 shouldn't clobber any released builds
-TAG ?= 0.92
-REGISTRY ?= quay.io/kubernetes-ingress-controller
+TAG ?= 0.92-skedulo-0.1
+REGISTRY ?= quay.io/skedulo
 ARCH ?= $(shell go env GOARCH)
 DOCKER ?= docker
 
-ALL_ARCH = amd64 arm arm64
+ALL_ARCH = amd64
 SED_I?=sed -i
 GOHOSTOS ?= $(shell go env GOHOSTOS)
 

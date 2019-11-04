@@ -76,9 +76,10 @@ INGRESS_DIRECTORY="${GOPATH}/src/k8s.io"
 mkdir -p ${INGRESS_DIRECTORY}
 cd ${INGRESS_DIRECTORY}
 
-git clone https://github.com/kubernetes/ingress-nginx
+git clone https://github.com/willthames/ingress-nginx
 
 cd ingress-nginx
+git checkout enable-opentracing-annotation
 
 make register-qemu
 
